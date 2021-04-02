@@ -15,6 +15,7 @@
 
 <!-- clipboard -->
 <% if (is_post()){ %>
+  <%- js('js/toc-highlight') %>
   <% if (isCdnEnable('clipboard')) { %>
     <%- getCdnScript('clipboard') %> 
   <% } else { %> 
